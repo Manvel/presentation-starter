@@ -2,16 +2,35 @@
 <html>
   <head>
     <% include _head %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/css/highlighting.css">
   </head>
   <body>
-    <header>
-      <div>
-        <h1><%= page.header %></h1>
-      </div>
-    </header>
-    <% include _navigation %>
-    <main>
-      <%- page.body %>
-    </main>
+    <div class="reveal">
+			<div class="slides">
+				<%- page.body %>
+			</div>
+		</div>
+
+		<script src="/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'js/marked.js' },
+					{ src: 'js/markdown.js' },
+					{ src: 'js/notes.js', async: true },
+					{ src: 'js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			Reveal.configure({ history: true, loop: true });
+		</script>
   </body>
 </html>
