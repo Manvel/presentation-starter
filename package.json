@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "cmints": "^0.8.1",
-    "reveal.js": "^3.8.0"
+    "reveal.js": "3.8.0"
   }
 }
