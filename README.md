@@ -1,10 +1,4 @@
-# Single language website starter for CMintS.
-
-## Links
-
-- [Step by step usage guide](https://cmints.io/quick-start)
-- [Current Starter](https://single.cmints.io/)
-- [CMintS](https://cmints.io)
+# Presentation preparation starter based on Reveal.js and CMintS
 
 ## Installation
 
