@@ -20,7 +20,7 @@
     "url": "https://github.com/Manvel/cmints-single-lang-boilerplate/issues"
   },
   "dependencies": {
-    "cmints": "^0.8.1",
+    "cmints": "1.1.0",
     "reveal.js": "3.8.0"
   }
 }
